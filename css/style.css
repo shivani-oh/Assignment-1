@@ -1,84 +1,88 @@
-body{
- background-color:beige;
+.container{
+    width: 1150px;
+    margin: 0 auto;
+    font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
+}
 
+header {
+    width: 100%;
+    padding: 15px 10px;
 
 }
 
-
-
-
-.background-color{
-
-
-
-    background-color:darkcyan;
-   line-height:40px;
-   text-align: center;
-
-
+header ul li{
+    display: inline-block;
+    margin: 0px 5px;
+   
+}
+header .logo{
+    float: left;
+}
+header nav,header .startNow{
+    float: right;
+}
+header ul li a{
+    display: inline-block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: large;
+   
+}
+.btnStyle{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+   
+}
+.btnStyle:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+    transition:all 1.2s ease 0s;
+   
+}
+a:hover {
+  color: #0066ff;
+  border-bottom: 3px solid darkgray; 
 }
 
-.font-size{
 
-    font-size: 20px;
-    font-weight:500;
+a.linkColor{
+    color: #0066ff;
 }
 
-h1{
 
-text-align: center;
-
+div h1 {
+    font-size: 40px;
+    color:#333;
+    font-weight: 500;
 }
+
 
 .margin{
-    margin:20px;
-}
-.padding{
-padding: 30px;
-}
-li{
-
-display: inline;
-margin: 50px;
-
-top: 10px;
-padding:5px;
-}
-div.sticky{
-
-
-position: -webkit-sticky;
-position: sticky;
-padding: 5px;
-top: 0;
+    margin-top: 70px;
 
 }
+.fLeft{
+    float: left;
+}
+.fRight{
+    float: right;
+}
+.bannerContent{
+    width: 60%;
 
-.fixed{
+}
+.bannerImage{
+    width: 40%;
 
-
-    position: -webkit-sticky;
-    position: fixed;
-    padding: 5px;
-   }
-   .relative{
-
-    position: relative;
-    height: 200px;
-    width: 400px;
-    border: 3px solid blue;
-
-
-
-   }
-
-   .absolute{
- position: absolute;
-    height: 100px;
-    width: 200px;
-    border: 3px solid blue;
-   
-    right: 0px;
-    
-
-   }
+}
