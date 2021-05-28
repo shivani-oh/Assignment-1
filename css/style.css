@@ -1,0 +1,84 @@
+body{
+ background-color:beige;
+
+
+}
+
+
+
+
+.background-color{
+
+
+
+    background-color:darkcyan;
+   line-height:40px;
+   text-align: center;
+
+
+}
+
+.font-size{
+
+    font-size: 20px;
+    font-weight:500;
+}
+
+h1{
+
+text-align: center;
+
+}
+
+.margin{
+    margin:20px;
+}
+.padding{
+padding: 30px;
+}
+li{
+
+display: inline;
+margin: 50px;
+
+top: 10px;
+padding:5px;
+}
+div.sticky{
+
+
+position: -webkit-sticky;
+position: sticky;
+padding: 5px;
+top: 0;
+
+}
+
+.fixed{
+
+
+    position: -webkit-sticky;
+    position: fixed;
+    padding: 5px;
+   }
+   .relative{
+
+    position: relative;
+    height: 200px;
+    width: 400px;
+    border: 3px solid blue;
+
+
+
+   }
+
+   .absolute{
+ position: absolute;
+    height: 100px;
+    width: 200px;
+    border: 3px solid blue;
+   
+    right: 0px;
+    
+
+   }
