@@ -1,17 +1,27 @@
  /* body container styling */
+ body, * {
+    font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
+ }
 
 .container{
     width: 1190px;
     margin: 0 auto;
-    font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
 }
 /* Header css styling */
 
 header {
     width: 100%;
     padding: 15px 10px;
-
+    background:#fff;
+    box-sizing: border-box;
 }
+/* clearing the float property */
+.clearFix::after { 
+    clear: both;
+    content: '';
+    display: block;
+}
+
 header ul li{
     display: inline-block;
     margin: 0px 5px;
@@ -29,11 +39,11 @@ header ul li{
 }
 header ul li a{
     display: inline-block;
-    padding: 10px;
+    padding: 10px 5px;
     color: #333;
     text-decoration: none;
     font-size: large;
-   
+    border-bottom: 3px solid transparent; 
 }
 /* anchor hover */
 header ul li a:hover {
@@ -56,26 +66,42 @@ header ul li a:hover {
 .btn1Style{
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
     border-radius: 20px;
-   
+   cursor: pointer;
 }
  /* button 1 styling after hovering */
 
-.btn1Style:hover{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    
+.btn1Style:hover{    
     -ms-transform: scale(1.1); 
     -webkit-transform: scale(1.1); 
     transform: scale(1.1);
     transition:all 1.2s ease 0s;
    
 }
+ /* button 2 styling before hovering */
+
+ .btn2Style{
+    background-color: #006BB1;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 16px 25px 17px;
+    border: none;
+    border-radius: 30px;
+    line-height: 27px;
+    cursor: pointer;
+}
+/* button 2 styling after hovering */
+.btn2Style:hover{
+    border-radius: 30px;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:all 1.1s ease 0s;
+}
+
 
 
 /* anchor text color */
@@ -92,13 +118,12 @@ div h1{
 
 /* Applying margin to elements */
 .margin{
-    margin-top: 70px;
+    margin-top: 20px;
 
 }
 /* Applying float to elements */
 .fLeft{
     float: left;
-    font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
     font-size: 25px;
     margin-top: 30px;
 }
@@ -113,41 +138,21 @@ div h1{
 }
 .bannerContent{
     width: 60%;
-
+}
+.bannerContent h1 strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.93px;
+    line-height: 56px;
 }
 .bannerImage{
     width: 40%;
-}
- /* button 2 styling before hovering */
-
-.btn2Style{
-    background-color: #006BB1;
-    font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 30px;
-   
-}
-/* button 2 styling after hovering */
-.btn2Style:hover{
-    background-color: #006BB1;
-    font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 20px;
-    
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    transition:all 1.1s ease 0s;
-   
-}
+    width: 450px;
+    height: 432px;
+    background: url(../images/OHimg.svg) no-repeat 0 0;
+    background-size: 100% auto;
+}   
 
 /* Sticky position for header */
 header.sticky {
@@ -155,6 +160,54 @@ header.sticky {
     position: sticky;
     top: 0;
 }
+.teamImages1{
+    
+    width: 98px;
+    height: 36px;
+    background: url(../images/walkme.webp) no-repeat 0 0;
+    background-size: 100% auto;
+    margin-left: 0;
+}
+.teamImages2{
 
+    width: 150px;
+    height: 36px;
+    background: url(../images/touchbistro.webp) no-repeat 0 0;
+    background-size: 100% auto;
+}
+.teamImages3{
 
+    width: 114px;
+    height: 36px;
+    background: url(../images/tophat.webp) no-repeat 0 0;
+    background-size: 100% auto;
+}
+.teamImages4{
 
+    width: 90px;
+    height: 36px;
+    background: url(../images/nexonia.webp) no-repeat 0 0;
+    background-size: 100% auto;
+}
+.teamImages5{
+
+    width: 223px;
+    height: 35.94px;
+    background: url(../images/targetprocess.webp) no-repeat 0 0;
+    background-size: 100% auto;
+    margin-right: 0;
+}
+section ul li{
+    display: inline-block;
+    padding: 10px 5px; 
+    margin: 30px 50px;
+    
+}
+
+section h5{
+    margin-top: 20px;
+    text-align: center;
+    font-weight:380;
+    color:darkslategray;
+    font-size: 16px;
+}
