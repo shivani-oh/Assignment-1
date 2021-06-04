@@ -1,4 +1,11 @@
  /* body container styling */
+
+ /* Common CSS*/
+
+.section-border {
+    border-bottom: 1px solid #c8c8c8;
+}
+
  body, * {
     font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
  }
@@ -6,20 +13,94 @@
 .container{
     width: 1190px;
     margin: 0 auto;
+    padding: 15px 20px;
 }
-/* Header css styling */
 
-header {
-    width: 100%;
-    padding: 15px 10px;
-    background:#fff;
-    box-sizing: border-box;
-}
 /* clearing the float property */
 .clearFix::after { 
     clear: both;
     content: '';
     display: block;
+}
+
+
+ /* button 1 styling before hovering */
+
+ .btn1Style{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+   cursor: pointer;
+}
+ /* button 1 styling after hovering */
+
+.btn1Style:hover{    
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+    transition:all 1.2s ease 0s;
+   
+}
+ /* button 2 styling before hovering */
+
+ .btn2Style{
+    background-color: #006BB1;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 16px 25px 17px;
+    border: none;
+    border-radius: 30px;
+    line-height: 27px;
+    cursor: pointer;
+}
+/* button 2 styling after hovering */
+.btn2Style:hover{
+    border-radius: 30px;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:all 1.1s ease 0s;
+}
+
+
+/* Applying margin to elements */
+.margin{
+    margin-top: 20px;
+
+}
+/* Applying float to elements */
+.fLeft{
+    float: left;
+  
+}
+.fRight{
+    float: right;
+}
+
+/* section content and image display */
+.contentMargin{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* anchor text color */
+a.linkColor{ 
+    color: #0066ff;
+}
+
+
+ /* Common CSS Ends*/
+
+
+/* Header css styling */
+
+header {
+    width: 100%;
+    background:#fff;
+    box-sizing: border-box;
 }
 
 header ul li{
@@ -61,52 +142,11 @@ header ul li a:hover {
    
 }
 
- /* button 1 styling before hovering */
-
-.btn1Style{
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-   cursor: pointer;
-}
- /* button 1 styling after hovering */
-
-.btn1Style:hover{    
-    -ms-transform: scale(1.1); 
-    -webkit-transform: scale(1.1); 
-    transform: scale(1.1);
-    transition:all 1.2s ease 0s;
-   
-}
- /* button 2 styling before hovering */
-
- .btn2Style{
-    background-color: #006BB1;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    padding: 16px 25px 17px;
-    border: none;
-    border-radius: 30px;
-    line-height: 27px;
-    cursor: pointer;
-}
-/* button 2 styling after hovering */
-.btn2Style:hover{
-    border-radius: 30px;
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    transition:all 1.1s ease 0s;
-}
-
-
-
-/* anchor text color */
-a.linkColor{ 
-    color: #0066ff;
+/* Sticky position for header */
+header.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 
@@ -116,28 +156,10 @@ div h1{
     font-weight: 500;
 }
 
-/* Applying margin to elements */
-.margin{
-    margin-top: 20px;
-
-}
-/* Applying float to elements */
-.fLeft{
-    float: left;
-    font-size: 25px;
-    margin-top: 30px;
-}
-.fRight{
-    float: right;
-}
-
-/* section content and image display */
-.contentMargin{
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
 .bannerContent{
     width: 60%;
+    font-size: 25px;
+    margin-top: 30px;
 }
 .bannerContent h1 strong {
     display: block;
@@ -154,54 +176,43 @@ div h1{
     background-size: 100% auto;
 }   
 
-/* Sticky position for header */
-header.sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
+
 .teamImages1{
-    
     width: 98px;
     height: 36px;
     background: url(../images/walkme.webp) no-repeat 0 0;
     background-size: 100% auto;
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 .teamImages2{
-
     width: 150px;
     height: 36px;
     background: url(../images/touchbistro.webp) no-repeat 0 0;
     background-size: 100% auto;
 }
 .teamImages3{
-
     width: 114px;
     height: 36px;
     background: url(../images/tophat.webp) no-repeat 0 0;
     background-size: 100% auto;
 }
 .teamImages4{
-
     width: 90px;
     height: 36px;
     background: url(../images/nexonia.webp) no-repeat 0 0;
     background-size: 100% auto;
 }
 .teamImages5{
-
     width: 223px;
     height: 35.94px;
     background: url(../images/targetprocess.webp) no-repeat 0 0;
     background-size: 100% auto;
-    margin-right: 0;
+    margin-right: 0 !important;
 }
-section ul li{
+section ul.display li{
     display: inline-block;
     padding: 10px 5px; 
-    margin: 30px 50px;
-    
+    margin: 30px 55px;
 }
 
 section h5{
@@ -211,3 +222,119 @@ section h5{
     color:darkslategray;
     font-size: 16px;
 }
+
+
+/* Product listing */
+
+.product-list li {
+    width: calc(50% - 3px);
+    display: inline-block;
+}
+
+.product-list li > span {
+    width: 180px;
+    height: 210px;
+    display: inline-block;
+}
+
+.product-list li > div {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 185px);
+}
+
+.product-list li:nth-child(1) span.image {
+    background: url(../images/so-image.svg) no-repeat;
+}
+
+.product-list li:nth-child(2) span.image {
+    background: url(../images/co-image.svg) no-repeat;
+}
+.product-list li > div span {
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+}
+
+.product-list li > div span.so-logo {
+    background: url(../images//so-logo.svg) no-repeat;
+    margin-top: 40px;
+    
+}
+
+.product-list li > div span.co-logo {
+    background: url(../images/co-logo.svg) no-repeat;
+    margin-top: 40px;
+}
+
+.product-list li:nth-child(1) div button{
+    background: rgba(0,107,177,1.0);
+    margin-left: 30px;
+    padding:12px 25px;
+   
+}
+
+.product-list li:nth-child(2) div button {
+    background: #b733a9;
+    margin-left: 30px;
+    padding:12px 25px;
+}
+
+.product-list div p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.design-section h5 {
+    font-size: 30px;
+    line-height: 32px;
+    text-align: left;
+}
+.design-section h3 {
+    font-size:40px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+.design-section ul li h6 {
+    font-size:18px;
+    font-weight: 600;
+    line-height: 22px;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 auto;
+   
+}
+.design-section ul li {
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 auto;
+   
+}
+
+.banner2Image{
+   
+    width: 379px;
+    height: 399px;
+    background: url("../images/building-image.svg") no-repeat;
+    background-size: 100% auto;
+    display: block;
+}
+.banner3Image{
+   
+    width: 303px;
+    height: 359px;
+    background: url("../images/user-images.svg") no-repeat;
+    background-size: 100% auto;
+    display: block;
+}
+
+section div p{
+    display: grid;
+    grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+    grid-gap: 10px;
+    
+}
+
