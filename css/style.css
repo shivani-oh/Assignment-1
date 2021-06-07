@@ -277,7 +277,6 @@ section h5{
 
 .product-list li > div span.co-logo {
     background: url(../images/co-logo.svg) no-repeat;
-    margin-top: 40px;
 }
 
 .product-list li div button{
@@ -296,7 +295,7 @@ section h5{
 
 .product-list div p {
     font-size: 15px;
-    line-height: 30px;
+    line-height: 22px;
 }
 
 .design-section h5 {
@@ -320,6 +319,7 @@ section h5{
     margin: 0 auto;
    
 }
+
 .design-section ul li {
     font-size: 15px;
     line-height: 22px;
@@ -392,10 +392,10 @@ section h5{
     font-size: 15px;
     line-height: 22px;
     display: inline-block;
-    /* padding: 10px 20px 10px 0; */
     margin: 40px auto;
-    width: 13%;
+    width: calc(13% + 11.5px);
     vertical-align: top;
+    background-position: center;
 }
 
 .meetingLogo1{
@@ -493,20 +493,26 @@ section h5{
 .design-section2 h4:hover{
   text-decoration: underline;
 }
-.trustCenterLogo1{
-    width: 70px;
-    height: 70px;
+.design-section2 ul.trustCenterLogo1 {
+    width: 100%
+}
+.design-section2 ul.trustCenterLogo1 li{
+    width: 100%;
+    height: 115px;
     background: url("../images/trust-center-logos1.webp") no-repeat;
-
+    background-position: center;
 }
 footer{
     background-color:#33475B;
     color: white;
     height: auto;
 }
-footer div ul li{
+footer div ul.footer-listing {
+    padding: 50px 0 10px;
+}
+footer div ul.footer-listing li{
     display: inline-block;
-    width:19%;
+    width: calc(20% - 5px);
     line-height:30px;
     margin-top: 15px;
     vertical-align: top;
@@ -514,7 +520,7 @@ footer div ul li{
 footer div ul li > h6{
     font-size:16px;
     font-weight:bold;
-
+    padding-bottom: 10px;
 }
 
 footer a{
@@ -524,4 +530,22 @@ footer a{
 
 footer a:hover{
   text-decoration: underline;
+}
+footer ul.footer-notice {
+    margin: 10px 0;
+}
+
+footer ul.footer-notice li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+footer .section-border {
+    border-color: rgba(256,256,256,0.2) !important;
 }
