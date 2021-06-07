@@ -7,7 +7,7 @@
 }
 
  body, * {
-    font-family: Open Sans,"Segoe UI",Tahoma,sans-serif;
+    font-family: 'Roboto', sans-serif;
  }
 
 .container{
@@ -23,6 +23,9 @@
     display: block;
 }
 
+.clear {
+    clear: both;
+}
 
  /* button 1 styling before hovering */
 
@@ -31,7 +34,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
    cursor: pointer;
 }
  /* button 1 styling after hovering */
@@ -52,7 +55,7 @@
     color: white;
     padding: 16px 25px 17px;
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     line-height: 27px;
     cursor: pointer;
 }
@@ -74,8 +77,8 @@
 /* Applying float to elements */
 .fLeft{
     float: left;
-  
 }
+
 .fRight{
     float: right;
 }
@@ -89,6 +92,14 @@
 /* anchor text color */
 a.linkColor{ 
     color: #0066ff;
+}
+
+section.padding-around {
+    padding: 100px 0px;
+}
+
+section.bottom-padding {
+    padding-bottom: 100px;
 }
 
 
@@ -105,8 +116,7 @@ header {
 
 header ul li{
     display: inline-block;
-    margin: 0px 5px;
-   
+    margin: 0px 5px;   
 }
 header .logo{
     float: left;
@@ -209,10 +219,13 @@ div h1{
     background-size: 100% auto;
     margin-right: 0 !important;
 }
+section ul.display {
+    margin-top: 30px;
+}
+
 section ul.display li{
     display: inline-block;
-    padding: 10px 5px; 
-    margin: 30px 55px;
+    margin: 0px 57px;
 }
 
 section h5{
@@ -240,7 +253,8 @@ section h5{
 .product-list li > div {
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 185px);
+    width: calc(100% - 220px);
+    margin-left: 35px;
 }
 
 .product-list li:nth-child(1) span.image {
@@ -259,7 +273,6 @@ section h5{
 .product-list li > div span.so-logo {
     background: url(../images//so-logo.svg) no-repeat;
     margin-top: 40px;
-    
 }
 
 .product-list li > div span.co-logo {
@@ -267,17 +280,18 @@ section h5{
     margin-top: 40px;
 }
 
+.product-list li div button{
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .product-list li:nth-child(1) div button{
     background: rgba(0,107,177,1.0);
-    margin-left: 30px;
-    padding:12px 25px;
-   
 }
 
 .product-list li:nth-child(2) div button {
     background: #b733a9;
-    margin-left: 30px;
-    padding:12px 25px;
 }
 
 .product-list div p {
@@ -289,6 +303,7 @@ section h5{
     font-size: 30px;
     line-height: 32px;
     text-align: left;
+    padding-bottom: 15px;
 }
 .design-section h3 {
     font-size:40px;
@@ -301,40 +316,212 @@ section h5{
     font-weight: 600;
     line-height: 22px;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 0px;
     margin: 0 auto;
    
 }
 .design-section ul li {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 20px 10px 0;
     margin: 0 auto;
-   
+    width: 33%;
+    vertical-align: top;
+}
+
+.design-section p{
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: 400;
 }
 
 .banner2Image{
-   
-    width: 379px;
-    height: 399px;
+    width: 100%;
+    height: 310px;
     background: url("../images/building-image.svg") no-repeat;
     background-size: 100% auto;
     display: block;
 }
 .banner3Image{
-   
-    width: 303px;
-    height: 359px;
+    width: 100%;
+    height: 310px;
     background: url("../images/user-images.svg") no-repeat;
     background-size: 100% auto;
     display: block;
 }
 
-section div p{
-    display: grid;
-    grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
-    grid-gap: 10px;
-    
+.design-banner-right {
+    width: 260px;
+    margin-top: 100px;
 }
 
+.design-banner-left {
+    width: calc(100% - 260px);
+    padding-top: 50px;
+}
+
+.design-banner-left ul {
+    padding-right: 50px;
+}
+
+.design-banner-left-2 {
+    width: 260px;
+    margin-top: 120px;
+}
+
+.design-banner-right-2 {
+    width: calc(100% - 260px);
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.design-section2 h3{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+.design-section2 h6{
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 20px;
+}
+.design-section2 ul li {
+    font-size: 15px;
+    line-height: 22px;
+    display: inline-block;
+    /* padding: 10px 20px 10px 0; */
+    margin: 40px auto;
+    width: 13%;
+    vertical-align: top;
+}
+
+.meetingLogo1{
+    width: 70px;
+    height: 70px;
+    background: url("../images/zoom.svg") no-repeat;
+    
+}
+.meetingLogo2{
+    width:70px;
+    height: 70px;
+    background: url("../images/googlemeet.svg") no-repeat;
+   
+}
+
+.meetingLogo3{
+    width: 70px;
+    height: 70px;
+    background: url("../images/mteams.svg") no-repeat;
+   
+}
+.meetingLogo4{
+    width:70px;
+    height: 70px;
+    background: url("../images/gtm.svg") no-repeat;
+    
+}
+.meetingLogo5{
+    width: 70px;
+    height: 70px;
+    background: url("../images/webex.svg") no-repeat;
+   
+}
+.meetingLogo6{
+    width: 70px;
+    height: 70px;
+    background: url("../images/gcalendar.svg") no-repeat;
+   
+}
+.meetingLogo7{
+    width: 70px;
+    height: 70px;
+    background: url("../images/office365.svg") no-repeat;
+    margin-left:0 !important;
+}
+.meetingLogo8{
+    width: 70px;
+    height: 70px;
+    background: url("../images/exchange.svg") no-repeat;
+    margin-left:0 !important;
+}
+.meetingLogo9{
+    width: 70px;
+    height: 70px;
+    background: url("../images/outlook.svg") no-repeat;
+    margin-left:0 !important;
+}
+.meetingLogo10{
+    width: 70px;
+    height: 70px;
+    background: url("../images/icloud.svg") no-repeat;
+    margin-left:0 !important;
+}
+.meetingLogo11{
+    width: 70px;
+    height: 70px;
+    background: url("../images/salesforce.svg") no-repeat;
+    margin-left:0 !important;
+}
+.meetingLogo12{
+    width: 70px;
+    height: 70px;
+    background: url("../images/infusionsoft.svg") no-repeat;
+    margin-left:0 !important;
+}
+.meetingLogo13{
+    width: 70px;
+    height: 70px;
+    background: url("../images/zapier.svg") no-repeat;
+    margin-left:0 !important;
+}
+.meetingLogo14{
+    width: 70px;
+    height: 70px;
+    background: url("../images/paypal.svg") no-repeat;
+    margin-left:0 !important;
+}
+.design-section2 h4{
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 22px;
+    text-align: center;
+    color: blue;   
+}
+.design-section2 h4:hover{
+  text-decoration: underline;
+}
+.trustCenterLogo1{
+    width: 70px;
+    height: 70px;
+    background: url("../images/trust-center-logos1.webp") no-repeat;
+
+}
+footer{
+    background-color:#33475B;
+    color: white;
+    height: auto;
+}
+footer div ul li{
+    display: inline-block;
+    width:19%;
+    line-height:30px;
+    margin-top: 15px;
+    vertical-align: top;
+}
+footer div ul li > h6{
+    font-size:16px;
+    font-weight:bold;
+
+}
+
+footer a{
+    color: white;
+    display:block
+}
+
+footer a:hover{
+  text-decoration: underline;
+}

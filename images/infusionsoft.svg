@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>infusionsoft</title>
+    <g id="infusionsoft" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-46" transform="translate(14.000000, 4.000000)">
+            <g id="Group-8" transform="translate(0.000000, 8.000000)">
+                <polygon id="Path" points="0.280000687 0.00800075531 54.4120066 0.00800075531 54.4120066 54.12601 0.280000687 54.12601"></polygon>
+            </g>
+            <g id="Group" transform="translate(2.656001, 0.016000)" fill="#36A635" fill-rule="nonzero">
+                <g id="Group" transform="translate(0.000000, 0.687273)">
+                    <polygon id="Path" points="31.8351837 27.041818 31.8351837 1.03338139e-13 4.20763737e-14 20.2813635 26.4345722 29.981146"></polygon>
+                    <polygon id="Path" points="26.4345722 30.2750788 24.1606305 32.0386756 25.8660867 32.6265412 32.6879118 34.9780037 32.6879118 57.3168968 2.5581844 45.8535174 -1.75318224e-14 47.3231814 34.6776108 59.962292 34.6776108 33.2144068"></polygon>
+                    <polyline id="Path" points="24.1606305 31.7447428 8.76591119e-15 22.6328259 8.76591119e-15 47.3231814"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
