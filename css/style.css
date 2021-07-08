@@ -11,9 +11,10 @@
  }
 
 .container{
-    width: 1190px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px 20px;
+    max-width: 1190px;
 }
 
 /* clearing the float property */
@@ -179,12 +180,14 @@ div h1{
     line-height: 56px;
 }
 .bannerImage{
-    width: 40%;
-    width: 450px;
-    height: 432px;
+    width: 35%;
+    height: 560px;
     background: url(../images/OHimg.svg) no-repeat 0 0;
     background-size: 100% auto;
 }   
+.product-list{
+    padding: 0px 20px;
+}
 
 
 .teamImages1{
@@ -195,37 +198,37 @@ div h1{
     margin-left: 0 !important;
 }
 .teamImages2{
-    width: 150px;
+    width: 135px;
     height: 36px;
     background: url(../images/touchbistro.webp) no-repeat 0 0;
     background-size: 100% auto;
 }
 .teamImages3{
-    width: 114px;
+    width: 115px;
     height: 36px;
     background: url(../images/tophat.webp) no-repeat 0 0;
     background-size: 100% auto;
 }
 .teamImages4{
-    width: 90px;
+    width: 98px;
     height: 36px;
     background: url(../images/nexonia.webp) no-repeat 0 0;
     background-size: 100% auto;
 }
 .teamImages5{
-    width: 223px;
+    width: 220px;
     height: 35.94px;
     background: url(../images/targetprocess.webp) no-repeat 0 0;
     background-size: 100% auto;
     margin-right: 0 !important;
 }
 section ul.display {
-    margin-top: 30px;
+    text-align: center;
 }
 
 section ul.display li{
     display: inline-block;
-    margin: 0px 57px;
+    margin: 30px 57px 0px;
 }
 
 section h5{
@@ -266,13 +269,13 @@ section h5{
 }
 .product-list li > div span {
     width: 100%;
-    height: 30px;
+    height: 35px;
     display: inline-block;
 }
 
 .product-list li > div span.so-logo {
     background: url(../images//so-logo.svg) no-repeat;
-    margin-top: 40px;
+    background-size: auto 100%;
 }
 
 .product-list li > div span.co-logo {
@@ -281,6 +284,7 @@ section h5{
 
 .product-list li div button{
     padding: 12px 25px;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -493,14 +497,18 @@ section h5{
 .design-section2 h4:hover{
   text-decoration: underline;
 }
+.design-section2 ul{
+    text-align: center;
+}
 .design-section2 ul.trustCenterLogo1 {
     width: 100%
 }
 .design-section2 ul.trustCenterLogo1 li{
     width: 100%;
-    height: 115px;
+    height: 180px;
     background: url("../images/trust-center-logos1.webp") no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 footer{
     background-color:#33475B;
@@ -518,7 +526,7 @@ footer div ul.footer-listing li{
     vertical-align: top;
 }
 footer div ul li > h6{
-    font-size:16px;
+    font-size:20px;
     font-weight:bold;
     padding-bottom: 10px;
 }

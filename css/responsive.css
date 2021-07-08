@@ -1,0 +1,125 @@
+@media screen and (max-width:1260px) {
+
+    section ul.display li{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .design-section2 ul li{
+        margin:25px auto;
+    }
+
+}
+@media screen and (max-width:1024px) {
+    .bannerImage{
+    /* background-color: green; */
+        display: none;
+    }
+    .banner2Image{
+        display: none;
+    }
+    .banner3Image{
+        display: none;
+    }
+    .bannerContent{
+        width: 100%;
+    }
+    .design-banner-left ul{
+        padding: 0px;
+    }
+    .design-section ul li:nth-child(even){
+
+        padding: 10px 0px;
+    }
+    .design-banner-right-2{
+        padding-left: 0px;
+    }
+    .product-list li{
+        width: 100%;
+        display: block;
+        max-width: 550px;
+        margin: 0px auto;
+    }
+    .product-list li:last-child{
+        margin-top: 40px;
+    }
+    .design-banner-left{
+        width: 100%;
+        text-align: center;
+    }
+    .design-banner-left-2{
+        margin-top: 0px;
+    }
+    .design-banner-right{
+        margin-top: 0px;
+    }
+    .design-banner-right-2{
+        width: 100%;
+        text-align: center;
+    }
+    .design-banner-right-2 h5{
+        text-align: center;
+    }
+    .design-banner-left h5{
+        text-align: center;
+    }
+}
+@media screen and (max-width:960px) {
+    header nav{
+        display: none;
+    }
+    .footer-listing li:nth-child(2),.footer-listing li:nth-child(3){
+        display: none;
+
+    }
+    footer div ul.footer-listing li {
+        width: calc(33.3% - 5px);
+    
+    }
+    .footer-listing{
+        text-align: center;
+    }
+    .footer-listing li{
+        padding:0px 40px;
+    }
+    .footer-listing li h6{
+        font-size: 30px;
+    }
+    .footer-listing li a{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .bannerContent{
+        text-align: center;
+    }
+    div h1{
+        font-size: 20px;
+    }
+    .footer-listing li{
+        padding:30px 15px;
+    }
+}
+@media screen and (max-width:640px){
+    footer div ul.footer-listing li{
+        width: 100%;
+        display: block;
+        line-height: 25px;
+        padding: 10px 0px;
+    }
+    footer div ul.footer-listing li h6{
+        font-size: 25px;
+    }
+    footer div ul.footer-listing li a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    section ul.display li{
+        width: 25%;
+    }
+    section ul{
+        margin: 0px auto;
+    }
+}
